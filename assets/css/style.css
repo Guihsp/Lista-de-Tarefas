@@ -1,91 +1,101 @@
-* {
+*{
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;    
 }
 
-body {
+html,body{
     height: 100%;
     width: 100%;
     background: #313bd3;
-    margin: 10vh 0;
+}
+main{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    margin-top: 30vh;
 }
-
-#title {
+#title{
     color: #fff;
+    margin-bottom: 5px;
 }
-
-#container {
-    border: #fff 3px solid;
+#container{
+    border:#fff 3px solid;
+    width: 50%;
     padding: 10px;
-    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#box-addTask {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 5px;
-    padding: 10px;
-}
-
-#input-task {
-    width: 70%;
+#box-addTask{
+    background-color: #fff;
     padding: 5px;
-    outline: none;
-    border: #979797 2px solid;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
-#btn-add {
+#input-task{
+    width: 80%;
+    padding: 10px;
+    outline: #7a7a7a 1px solid;
+    border: none;
+}
+
+#btn-add{
+    width: 19%;
     background: transparent;
-    border: #313bd3 2px solid;
     color: #313bd3;
+    border: #313bd3 3px solid;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: .5s;
     cursor: pointer;
+    transition: .5s;
 }
 
-#btn-add:hover {
+#btn-add:hover{
+    background: #313bd3;
     color: #fff;
-    background-color: #313bd3;
 }
-
 #task-list {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#task-list li {
+#task-list li{
     background: #fff;
+    padding: 4px;
+    border: #fff 2px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
 }
 
-.btn-delete {
-    background: transparent;
-    border: #313bd3 2px solid;
+.btn-delete{
+    background: #fff;
+    border: #313bd3 3px solid;
     color: #313bd3;
     font-weight: bold;
-    padding: 5px;
-    transition: .5s;
+    padding: 5px 7px;
     cursor: pointer;
+    transition:.5s;
 }
 
-.btn-delete:hover {
-    background-color: #313bd3;
+.btn-delete:hover{
+    background: #313bd3;
+    color: #fff;
+}
+#links{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+#links li a{
     color: #fff;
 }
