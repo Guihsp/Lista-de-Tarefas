@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #313bd3;
+    margin: 10vh 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#title {
+    color: #fff;
+}
+
+#container {
+    border: #fff 3px solid;
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#box-addTask {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+}
+
+#input-task {
+    width: 70%;
+    padding: 5px;
+    outline: none;
+    border: #979797 2px solid;
+}
+
+#btn-add {
+    background: transparent;
+    border: #313bd3 2px solid;
+    color: #313bd3;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#btn-add:hover {
+    color: #fff;
+    background-color: #313bd3;
+}
+
+#task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#task-list li {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.btn-delete {
+    background: transparent;
+    border: #313bd3 2px solid;
+    color: #313bd3;
+    font-weight: bold;
+    padding: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #313bd3;
+    color: #fff;
+}
