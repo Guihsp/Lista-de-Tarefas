@@ -98,4 +98,8 @@ main{
 
 #links li a{
     color: #fff;
+    text-decoration: none;
+}
+#links li a:hover{
+    text-decoration:underline;
 }
