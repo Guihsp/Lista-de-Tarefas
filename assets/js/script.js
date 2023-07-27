@@ -23,7 +23,7 @@ function createDeleteButton(li) {
     const deleteButton = document.createElement(`button`);
     deleteButton.innerText = `Apagar`;
     deleteButton.setAttribute(`class`, `btn-delete`);
-    deleteButton.setAttribute(`title`, `Delete button`);
+    deleteButton.setAttribute(`title`, `Delete task button`);
     li.appendChild(deleteButton);
 }
 
